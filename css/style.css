@@ -1,0 +1,45 @@
+body {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.timer {
+  font-size: 2rem;
+  padding: 20px;
+  background-color: #ffc300;
+  text-align: center;
+}
+.exercise {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.keyboard button {
+  padding: 1rem;
+  font-size: 1.125rem;
+}
+
+.record, .keyboard, .exercise {
+  margin: 0 auto;
+}
+
+.record h3, .keyboard h3, .exercise h3 {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.record h3 p, .keyboard h3 p, .exercise h3 p {
+  padding: 0 10px;
+  margin: 0;
+}
+
+.reset {
+  width: 20%;
+  margin: 20px auto;
+  border: 1px solid #d3d3d3;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color:  #ffc300;
+}
