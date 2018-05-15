@@ -57,6 +57,7 @@ function startTimer () {
 
 const countKPS = (seconds, tens, chars) => {
   kps = chars / (seconds + tens / 100);
+  oldData = localStorage.getItem('kps');
   parseFloat(oldData) > kps
   ? console.log('You need more practice!')
   : (localStorage.setItem('kps', kps),
@@ -72,5 +73,5 @@ function reset() {
     appendSeconds.textContent = "0" + 0;
     appendTens.textContent = "0" + 0;
     keyboard.textContent = word.join('');
-    record.textContent = 0;
+    record.textContent = '';
 }
