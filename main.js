@@ -67,4 +67,10 @@ document.getElementById("reset").addEventListener("click", reset);
 
 function reset() {
     localStorage.removeItem('kps');
+    word = [];
+    result = [];
+    appendSeconds.textContent = "0" + 0;
+    appendTens.textContent = "0" + 0;
+    keyboard.textContent = word.join('');
+    record.textContent = 0;
 }
